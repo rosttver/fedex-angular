@@ -1,0 +1,22 @@
+<div class="main-area">
+  <h1 class="slogan">Slogan</h1>
+  <div class="flex-container">
+    <div tabindex="0" class="button-block">
+      <span class="material-icons"> calculate </span>
+    </div>
+    <div tabindex="0" class="button-block">
+      <span class="material-icons"> attach_money </span>
+    </div>
+    <div tabindex="0" class="button-block">
+      <span class="material-icons"> location_on </span>
+    </div>
+  </div>
+  <div class="flex-container">
+    <app-searchbar
+      (responseReceived)="onResponseReceived($event)"
+    ></app-searchbar>
+    <!-- <button class="submit-button">Submit</button> -->
+  </div>
+</div>
+<small>Free img from Unsplash - https://unsplash.com/photos/Xaanw0s0pMk</small>
+<div class="filler"><h1>Extra content block</h1></div>

@@ -1,0 +1,46 @@
+@import "_variables.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.covid-info-block {
+  background: #f2f2f2;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 108px;
+}
+.close-button {
+  float: right;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.header {
+  color: #fff;
+  height: 75px;
+  background-color: $fedex-main-color;
+  display: flex;
+  align-items: center;
+  padding: 0 25%;
+  .logo-block {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+}
+
+.filler {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+.footer {
+  color: #fff;
+  margin-top: 200px;
+  height: 50px;
+  background-color: $fedex-main-color;
+}

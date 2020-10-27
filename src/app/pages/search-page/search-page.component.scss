@@ -1,0 +1,63 @@
+@import "../../variables";
+
+.main-area {
+  display: flex;
+  justify-content: center;
+  height: 470px;
+  background-color: aqua;
+  background-position: center;
+  background-image: url(../../../assets/img/happy.jpg);
+  background-size: cover;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  .slogan {
+    font-size: 55px;
+    line-height: 60px;
+    font-weight: 300;
+    font-family: "Roboto", "sans-serif";
+    color: #fff;
+  }
+  .flex-container {
+    display: flex;
+    .button-block {
+      height: 120px;
+      width: 158px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #808080;
+    }
+    .button-block:hover,
+    :focus {
+      cursor: pointer;
+      background-color: $fedex-main-color;
+      transition: 1s;
+      transform: scale(1.1);
+    }
+  }
+  .submit-button {
+    background-color: $fedex-secondary-color;
+    font-size: 19px;
+    padding: 16px 40px;
+    height: 50px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 3px;
+  }
+  .submit-button:hover {
+    cursor: pointer;
+    transition: 1s;
+    transform: scale(1.05);
+  }
+}
+
+:host {
+  ::ng-deep {
+    .material-icons {
+      font-size: 48px;
+    }
+  }
+}

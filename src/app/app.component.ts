@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'search-app';
+  closeCovidInfoPanel = !!localStorage.getItem('covidPanel') || false;
+  collapse() {
+    this.closeCovidInfoPanel = true;
+    localStorage.setItem('covidPanel', 'true');
+  }
 }
+
+
